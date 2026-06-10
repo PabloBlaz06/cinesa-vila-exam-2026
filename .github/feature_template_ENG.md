@@ -1,6 +1,6 @@
 ---
 name: Feature Template
-about: Main feature template
+about: edu.iesam.features.cinesa.Main feature template
 title: ""
 type: feature
 assignees: ''
