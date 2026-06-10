@@ -1,0 +1,15 @@
+package edu.iesam.features.cinesa.presentation;
+
+import edu.iesam.features.cinesa.data.MovieDataRepository;
+import edu.iesam.features.cinesa.data.MovieMemLocalDataSource;
+import edu.iesam.features.cinesa.domain.MovieRepository;
+import edu.iesam.features.cinesa.domain.SaveMovieUseCase;
+
+public class MovieView {
+
+    private static final MovieRepository movierepository = new MovieDataRepository(MovieMemLocalDataSource.getInstance());
+
+    public static SaveMovieUseCase saveMovieUseCase (){
+        return new SaveMovieUseCase(movierepository);
+    }
+}
