@@ -10,7 +10,7 @@ public class GetMoviesUsecase {
         this.movieRepository = movieRepository;
     }
 
-    public List<Movie> execute(){
+    public List<Movie> execute(Movie movie1){
         return movieRepository.getAll();
     }
 }
