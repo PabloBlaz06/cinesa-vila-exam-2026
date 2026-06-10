@@ -22,8 +22,10 @@ public class MovieDataRepository implements MovieRepository {
         return localSource.findAll();
     }
 
-    /*
-     public void delete(String movieId){ localSource.delete(movieId);}
-     */
+
+     public void delete(String movieId){
+        localSource.delete(movieId);
+    }
+
 
 }

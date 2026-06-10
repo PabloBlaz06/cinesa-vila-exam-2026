@@ -6,5 +6,5 @@ public interface MovieRepository {
 
     void save(Movie movie);
     List<Movie> getAll();
-   // void delete(String movieId);
+    void delete(String movieId);
 }
