@@ -22,8 +22,8 @@ public class MovieMemLocalDataSource {
     public List<Movie> findAll() {
         return new ArrayList<>(dataStore.values());
     }
-/*
+
     public void delete(String movieId) {
         dataStore.remove(movieId);
-    }*/
+    }
 }
