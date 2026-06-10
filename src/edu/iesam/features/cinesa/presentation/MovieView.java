@@ -2,6 +2,7 @@ package edu.iesam.features.cinesa.presentation;
 
 import edu.iesam.features.cinesa.data.MovieDataRepository;
 import edu.iesam.features.cinesa.data.MovieMemLocalDataSource;
+import edu.iesam.features.cinesa.domain.GetMoviesUsecase;
 import edu.iesam.features.cinesa.domain.MovieRepository;
 import edu.iesam.features.cinesa.domain.SaveMovieUseCase;
 
@@ -11,5 +12,9 @@ public class MovieView {
 
     public static SaveMovieUseCase saveMovieUseCase (){
         return new SaveMovieUseCase(movierepository);
+    }
+
+    public static GetMoviesUsecase getMoviesUsecase(){
+        return new GetMoviesUsecase(movierepository);
     }
 }

@@ -19,10 +19,10 @@ public class MovieMemLocalDataSource {
         dataStore.put(movie.getId(),movie);
     }
 
-    /*public List<Movie> findAll() {
+    public List<Movie> findAll() {
         return new ArrayList<>(dataStore.values());
     }
-
+/*
     public void delete(String movieId) {
         dataStore.remove(movieId);
     }*/
